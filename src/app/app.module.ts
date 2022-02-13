@@ -16,6 +16,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { UserPlantsComponent } from './components/user-plants/user-plants.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AddPlantComponent,
     PlantListComponent,
     PlantInfoComponent,
-    UpdatePlantComponent
+    UpdatePlantComponent,
+    UserPlantsComponent
   ],
   imports: [
     BrowserModule,

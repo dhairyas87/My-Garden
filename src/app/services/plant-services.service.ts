@@ -18,7 +18,7 @@ export class PlantServicesService {
     return this.http.put("http://localhost:8080/plant/updatePlant",data);
   }
   getUserPlants(id:any):Observable<Plant[]> {
-    console.log("call all user palnts")
-    return this.http.get<Plant[]>("/getUserPlants/{id}");
+    console.log("call all user palnts" +id);
+    return this.http.get<Plant[]>("http://localhost:8080/plant/getUserPlants/"+id);
   }
 }

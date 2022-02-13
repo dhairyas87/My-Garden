@@ -3,11 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { PlantListComponent } from './components/plant-list/plant-list.component';
 import { PlantInfoComponent } from './components/plant-info/plant-info.component';
 import { AddPlantComponent } from './components/add-plant/add-plant.component';
+import { UserPlantsComponent } from './components/user-plants/user-plants.component';
 
 
 const routes: Routes = [ { path: '', redirectTo: 'plantslist', pathMatch: 'full' },
 { path: 'plantslist', component: PlantListComponent },
-{ path: 'plantslist/:id', component: PlantListComponent },
+{ path: 'plantslist/:id', component: UserPlantsComponent },
 { path: 'add-plant', component: AddPlantComponent }];
 
 @NgModule({

@@ -1,0 +1,7 @@
+<div class="content">
+    <div fxLayout="row wrap" fxLayoutGap="16px grid">
+        <div fxFlex="30%" *ngFor="let plant of plants; index as i;">
+            <app-plant-info [plant]="plant"></app-plant-info>
+</div>
+</div>
+</div>
